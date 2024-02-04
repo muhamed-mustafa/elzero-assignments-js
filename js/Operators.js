@@ -1,5 +1,5 @@
-console.log('Assignment three');
-console.log('----------------');
+console.log("Assignment three");
+console.log("----------------");
 
 // Replace ? With Arithmetic Operators
 console.log(10 * 20 + (15 % 3) + 190 + 10 - 400); // 0
@@ -21,21 +21,24 @@ console.log(num);
 // Solution Five
 console.log(++num - true);
 
-let num2 = '10';
+// Solution Six
+console.log(3 + true * 3);
+
+let num2 = "10";
 
 // Solution One
 console.log(+num2 + +num2);
 
 // Solution Two
-console.log(+num2 * (true + true));
+console.log(+num2 * (true * 2));
 
 // Solution Three
-console.log(+num2++ * (true + true));
+console.log(+num2++ * (true * 2));
 
 let points = 10;
-points = ++points + true + true;
+points = ++points + true * 2;
 
 console.log(points); // 13
 
-points = --points - (true + true + true + true);
+points = --points - true * 4;
 points = console.log(points); // 8;

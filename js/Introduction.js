@@ -39,19 +39,3 @@ console.table(["Muhammed", "Mustafa", "Al-SAYED"]);
   MultiLine Comment
    document.write("Iam In Page");
  */
-
-// Variable And Concatenation Challenge
-let theTitle = "ElZERO",
-  theDescription = "ElZERO Web School",
-  theDate = "25/10";
-
-let pageContent = `<div class = "card" style = "text-align: center;">
-  <div class = "child">
-      <h2> Hello ${theTitle} </h2>
-      <p> ${theDescription} </p>
-      <span> ${theDate} </span>
-  </div>
-</div>
-`;
-
-document.write(pageContent.repeat(4));

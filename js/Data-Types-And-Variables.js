@@ -1,25 +1,42 @@
-console.log('Assignment Two');
-console.log('----------------');
+console.log("Assignment Two");
+console.log("----------------");
 
-let numberOne = 10,
+const numberOne = 10,
   numberTwo = 20;
 
-console.log(String(numberOne) + numberTwo);
-console.log(typeof String(numberOne + numberTwo));
+console.log(numberOne.toString() + numberTwo);
+console.log(typeof (numberOne.toString() + numberTwo));
 console.log(`${numberOne}${numberTwo}`);
 console.log(typeof `${numberOne}${numberTwo}`);
-console.log(numberOne + '\n' + numberTwo);
+console.log(numberOne + "\n" + numberTwo);
 console.log(`${numberOne}
 ${numberTwo}`);
 
-console.log(elzero.innerHTML); // object
-console.log(typeof elzero); // object
+console.log(elzero.innerHTML);
+console.log(typeof elzero);
 
-let data =
-  '`I\'m In \n \\\\ \n Love \\\\  """ \'\'\' \n ++ With ++ \n \\"""\\""" \n ""JavaScript""``';
+const data =
+  '`I\'m In \n \\\\ \n Love \\\\ """ \'\'\' \n ++ With ++ \n \\"""\\""" \n ""JavaScript""``';
+
 console.log(data);
 
-let a = 21;
+let a = 24;
 let b = 20;
 
-console.log('_' + `${a}_${b}`.repeat(4) + '_');
+console.log("_" + `${a}_${b}`.repeat(4) + "_");
+
+// Variable And Concatenation Challenge
+let theTitle = "ElZERO",
+  theDescription = "ElZERO Web School",
+  theDate = "25/10";
+
+let pageContent = `<div class = "card" style = "text-align: center;">
+  <div class = "child">
+      <h2> Hello ${theTitle} </h2>
+      <p> ${theDescription} </p>
+      <span> ${theDate} </span>
+  </div>
+</div>
+`;
+
+document.write(pageContent.repeat(4));

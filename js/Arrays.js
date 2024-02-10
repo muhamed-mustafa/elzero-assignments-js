@@ -25,7 +25,7 @@ let website = "Go";
 let words = [`${website}ogle`, "Facebook", ["Elzero", "Web", "School"]];
 
 console.log(
-  words.pop()[0].split("").slice(word.indexOf("z")).join("").toUpperCase()
+  words.pop()[0].split("").slice(words.indexOf("z")).join("").toUpperCase()
 ); // ZERO
 
 let needle = "JS";

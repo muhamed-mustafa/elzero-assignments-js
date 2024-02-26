@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="our-element">Our Element</div>
+  <p>Paragraph</p>
+
+</body>
+
+<script>
+  document.getElementsByTagName('p')[0].remove();
+
+  const beforeElement = document.createElement('div');
+  const endElement = document.createElement('div');
+
+  beforeElement.title = 'Start Element';
+  beforeElement.className = 'start';
+
+  endElement.title = 'End Element';
+  endElement.className = 'end';
+
+  beforeElement.setAttribute('data-value', 'Start');
+
+  endElement.setAttribute('data-value', 'End');
+
+  console.log("beforeElement", beforeElement);
+
+  const before = document.getElementsByClassName('our-element')[0].before(beforeElement.textContent = 'Start');
+
+  const end = document.getElementsByClassName('our-element')[0].after(beforeElement.textContent = 'End');
+
+  console.log("before", before);
+  console.log("end", end);
+
+</script>
+
+</html>
